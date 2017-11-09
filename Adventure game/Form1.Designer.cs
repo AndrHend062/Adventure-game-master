@@ -106,6 +106,7 @@
             this.greenLabel.Name = "greenLabel";
             this.greenLabel.Size = new System.Drawing.Size(85, 62);
             this.greenLabel.TabIndex = 7;
+            this.greenLabel.Text = "N";
             // 
             // yellowLabel
             // 

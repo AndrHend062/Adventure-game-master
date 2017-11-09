@@ -80,7 +80,7 @@ namespace Adventure_game
                 if (scene == 12) { scene = 14; }
               
             }
-            else if (e.KeyCode == Keys.Tab)  //green button press
+            else if (e.KeyCode == Keys.Tab)  //debug button press
             {
                 debugLabel.Visible = true;
 
@@ -134,12 +134,12 @@ namespace Adventure_game
 
                 case 6:
                     outputLabel.Text = "you stand on your back legs. \n" +
-                        " do you windmill menuver or dropkick ";
+                        " do you windmill maneuver or dropkick ";
                     redLabel.Text = "windmill ";
                     blueLabel.Text = "dropkick ";
                     break;
                 case 7:
-                    outputLabel.Text = "you catch 3 more fish you survive";
+                    outputLabel.Text = "you catch 3 more fish and you survive";
                     redLabel.Text = "continue  ";
                     blueLabel.Text = " ";
                     break;
