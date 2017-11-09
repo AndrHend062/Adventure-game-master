@@ -1,4 +1,4 @@
-﻿//adventure game andrew henderson
+﻿//adventure game andrew henderson nov 8
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace Adventure_game
 {
@@ -18,6 +19,7 @@ namespace Adventure_game
         int day = 0;
         int Starve = 0 ;
 
+        SoundPlayer player = new SoundPlayer(Properties.Resources.print);
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +33,8 @@ namespace Adventure_game
             /// to the next appropriate scene
             
             
-           if (e.KeyCode == Keys.M)     //red button press
+
+            if (e.KeyCode == Keys.M)     //red button press
             {
                 if (scene == 0) { scene = 1; }
                 else if (scene == 1) { scene = 3; }
@@ -149,6 +152,7 @@ namespace Adventure_game
                     outputLabel.Text = "you get overwhlmed by monkeys and die  ";
                     redLabel.Text = "continue ";
                     blueLabel.Text = " ";
+                    player.Play();
                     break;
                     
 
@@ -170,6 +174,7 @@ namespace Adventure_game
                     outputLabel.Text = "you stay up all night and die from exaution ";
                     redLabel.Text = "continue ";
                     blueLabel.Text = " ";
+                    player.Play();
                     break;
                     
 
@@ -201,6 +206,7 @@ namespace Adventure_game
                     redLabel.Text = "continue ";
                     blueLabel.Text = "  ";
                     greenLabel.Text = "";
+                    player.Play();
                     break;
 
                  case 16:
@@ -226,7 +232,7 @@ namespace Adventure_game
                     break;
 
                  case 19:
-                    outputLabel.Text = "WIP ";
+                    outputLabel.Text = "WIP "; // not used 
                     break;
 
                  case 20:
