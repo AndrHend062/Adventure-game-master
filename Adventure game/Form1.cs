@@ -134,7 +134,7 @@ namespace Adventure_game
                     break;
 
                 case 6:
-                    outputLabel.Text = "You stand up on your back legs. \n Do you try or windmill manouever or several dropkicks?" ;
+                    outputLabel.Text = "You stand up on your back legs. \n Do you try a windmill manouever or several dropkicks?" ;
                         
                     redLabel.Text = "windmill ";
                     blueLabel.Text = "dropkick ";
