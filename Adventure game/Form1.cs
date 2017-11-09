@@ -95,61 +95,59 @@ namespace Adventure_game
             switch (scene)
             {
                 case 0:
-                    outputLabel.Text = "you are a bear what do you want to do \n go to river or the woods";
+                    outputLabel.Text = "You are a bear. You wake up from sleep and feel very hungry. \n Where do you go to look for food?";
                     redLabel.Text = "river ";
                     blueLabel.Text = "woods ";
                     break;
 
                 case 1:
-                    outputLabel.Text = "you approach a river \n do you try and catch fish " +
-                        "or cross the river";
+                    outputLabel.Text = "You approach the river. \n Do you try to catch a fish or to cross the river?" ;
+                        
                       redLabel.Text = "cross ";
                     blueLabel.Text = "catch fish ";
                     break;
 
                 case 2:
-                    outputLabel.Text = "you wander in the wood you see a deer " +
-                        "\n do you charge or sneak up on it ";
+                    outputLabel.Text = "You wander into the woods and spot a deer. \n Do you charge or try to sneak up on it? ";
+                      
                       redLabel.Text = "sneek  ";
                     blueLabel.Text = "charge ";
                     break;
 
                 case 3:
-                    outputLabel.Text = "you cross the river and you see a pack of monkeys charging" +
-                        " you do you run or attack";
+                    outputLabel.Text = "As you cross you see a pack of wild monkeys charging you. \n Do you run or attack?";  
                       redLabel.Text = "run ";
                     blueLabel.Text = "attack ";
                     break;
 
                 case 4:
-                    outputLabel.Text = "you catch 3 fish  \n do you stay " +
-                        "and catch more or cross";
+                    outputLabel.Text = "You catch 3 fish. \n Do you stay and catch more or do you cross the river? ";
+                       
                       redLabel.Text = "cross ";
                     blueLabel.Text = "catch more ";
                     break;
 
                 case 5:
-                    outputLabel.Text = "they are faster than you and" +
-                        " you are overwelmed and die ";
-                      redLabel.Text = "river ";
-                    blueLabel.Text = "woods ";
+                    outputLabel.Text = "The monkeys overrun you. You have died";
+                      redLabel.Text = "continue ";
+                    blueLabel.Text = " ";
                     break;
 
                 case 6:
-                    outputLabel.Text = "you stand on your back legs. \n" +
-                        " do you windmill maneuver or dropkick ";
+                    outputLabel.Text = "You stand up on your back legs. \n Do you try or windmill manouever or several dropkicks?" ;
+                        
                     redLabel.Text = "windmill ";
                     blueLabel.Text = "dropkick ";
                     break;
                 case 7:
-                    outputLabel.Text = "you catch 3 more fish and you survive";
+                    outputLabel.Text = "You catch 3 more fish. You have enough food for the night.";
                     redLabel.Text = "continue  ";
                     blueLabel.Text = " ";
                     break;
                     
 
                 case 8:
-                    outputLabel.Text = "you get overwhlmed by monkeys and die  ";
+                    outputLabel.Text = "You are overwhelmed by a tide of monkeys and die  ";
                     redLabel.Text = "continue ";
                     blueLabel.Text = " ";
                     player.Play();
@@ -157,7 +155,7 @@ namespace Adventure_game
                     
 
                 case 9:
-                    outputLabel.Text = "you defeat all the monkeys \n do you hunt or sleep ";
+                    outputLabel.Text = "You defeat all the monkeys.\n Do you continue to hunt or sleep? ";
                     redLabel.Text = "hunt ";
                     blueLabel.Text = "sleep ";
                     break;
@@ -171,7 +169,7 @@ namespace Adventure_game
                     
 
                 case 11:
-                    outputLabel.Text = "you stay up all night and die from exaution ";
+                    outputLabel.Text = "You stay up all night and die from exhaustion. ";
                     redLabel.Text = "continue ";
                     blueLabel.Text = " ";
                     player.Play();
@@ -179,7 +177,7 @@ namespace Adventure_game
                     
 
                 case 12:
-                    outputLabel.Text = "you kill the dear and survive \n do you go to the river or stay and serach for dear or sleep  ";
+                    outputLabel.Text = "You use your bear-like stealth and surprise the deer. You are now full. \n Do you stay to find more deer, go to the river or sleep?  ";
                     redLabel.Text = "serach ";
                     blueLabel.Text = "river ";
                     greenLabel.Text = "sleep";
@@ -187,7 +185,7 @@ namespace Adventure_game
                     
 
                 case 13:
-                    outputLabel.Text = "you spot a Sheep. it does not see you yet  what do you do \n sleep or attack ";
+                    outputLabel.Text = "You spot a sheep and it doesn't seem to notice you. Do you attack or go back to sleep? ";
                     redLabel.Text = "sleep ";
                     blueLabel.Text = "attack ";
                     greenLabel.Text = "";
@@ -202,10 +200,10 @@ namespace Adventure_game
                     break;
 
                  case 15:
-                    outputLabel.Text = "you die from the wolf in disguise  ";
+                    outputLabel.Text = "The sheep was actually a cos-playing wolf. It injures you and runs off.  ";
                     redLabel.Text = "continue ";
                     blueLabel.Text = "  ";
-                    greenLabel.Text = "";
+                    greenLabel.Text = " ";
                     player.Play();
                     break;
 
@@ -243,14 +241,14 @@ namespace Adventure_game
                     break;
 
                  case 99: //loser restart 
-                    outputLabel.Text = "you died do you want to try again ";
+                    outputLabel.Text = "You died. Do you want to try again? ";
                     redLabel.Text = "yes ";
                     blueLabel.Text = "no ";
                     greenLabel.Text = "";
                     break; 
 
                  case 100: // win restart 
-                    outputLabel.Text = "you survived do you want to continue to next day ";
+                    outputLabel.Text = "You survived. Do you want to continue to the next day? ";
                     redLabel.Text = "yes ";
                     blueLabel.Text = "no ";
                     greenLabel.Text = "";
